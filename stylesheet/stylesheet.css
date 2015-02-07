@@ -1,0 +1,53 @@
+.grid {
+  background: white;
+  width : 20px;
+  height: 20px;
+  border: 1px solid black;
+  padding: 10px;
+
+}
+
+table {
+  margin: 40px auto;
+}
+
+td {
+  padding: none;
+}
+
+h2 {
+  margin: 10px auto;
+  text-align: center;
+}
+
+.painted {
+  background: red;
+}
+
+.controls {
+  margin: 15px auto;
+
+}
+
+.controls .rescale {
+  margin: auto;
+  display: block;
+  background: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.controls .rescale:hover {
+  background: -webkit-linear-gradient(top, #ffffff ,#f1f1f1);
+}
+
+.controls .reset {
+  margin: 10px auto;
+  display: block;
+  background: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.controls .reset:hover {
+  background: -webkit-linear-gradient(top, #ffffff ,#f1f1f1);
+}
+
