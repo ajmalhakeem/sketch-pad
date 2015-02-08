@@ -1,3 +1,4 @@
+//When document is ready, create 16 x 16 grid as default
 $(document).ready( function() {
   $('table').append('<tbody></tbody>');
   
@@ -12,10 +13,13 @@ $(document).ready( function() {
 
   $('td').append('<div class="grid"></div>');
 
+//When div is hovered, style it to the paint value
   $('.grid').hover( function() {
     $(this).addClass("painted");
   });
-
+//Rescale button, removes styling of painted,
+//Empties table body, prompts user for input
+//Uses user input to create table again 
   $('.rescale').on('click', function() { 
     $('.grid').removeClass("painted");
     $('tbody').empty();
@@ -35,8 +39,9 @@ $(document).ready( function() {
     });
 
   });
-
+//Removes painted styling, keeps grid dimensions
   $('.reset').on('click', function() {
     $('.grid').removeClass("painted");
   });
 }); 
+
